@@ -7,10 +7,6 @@
 import pickle
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-import seaborn
-
-get_ipython().magic(u'matplotlib inline')
 
 
 #Load pickle from download and clean data
