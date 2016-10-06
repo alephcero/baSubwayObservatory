@@ -46,11 +46,13 @@ cleanData = t1.append(t2,ignore_index=True).reindex()
 cleanData.head()
 
 
+
 # Create a depart timestamp
 
 cleanData['depart'] = cleanData.date + ' ' + cleanData.time
+cleanData.date = pd.to_datetime(cleanData.date, format='%d/%m/%Y')
 cleanData.depart = pd.to_datetime(cleanData.depart, format='%d/%m/%Y %H:%M:%S')
-cleanData.drop(['date','time'], axis = 1, inplace = True)
+
 
 
 # store data into pickle
