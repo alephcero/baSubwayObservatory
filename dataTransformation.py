@@ -88,7 +88,7 @@ subwayData = pd.merge(cleanData,delayDataFinal,how='left',left_index=True, right
 
 
 # store data into pickle
-pickle.dump(cleanData, open( "subwayData.p", "wb" ))
+pickle.dump(subwayData, open( "subwayData.p", "wb" ))
 
 
 
