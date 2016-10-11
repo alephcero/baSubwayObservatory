@@ -77,6 +77,7 @@ delayDataFinal.shape
 #convert timedelta into integers en create a month category, remove unnecesary columns
 delayDataFinal['delayInt'] = delayDataFinal.delay / np.timedelta64(1, 'm')
 delayDataFinal['month'] = delayDataFinal.depart.map(lambda x: str(x.month) + '-' + str(x.year))
+delayDataFinal['departHour'] = delayDataFinal.depart.map(lambda x: x.hour)
 delayDataFinal.drop(['line','depart'], axis = 1 , inplace=True)
 
 
