@@ -13,4 +13,9 @@ The terminals labeled as 1 are the ones in the periphery of the city, while the 
 * Produce "Your commute" using first line an hour using only the terminal stations (this will tell how lonk takes the subway to come). Future versions say at what time arrives based on the distance (% of distance used as proxy for % of time that take to be there ffrom the nearest terminal)  then stations 
 * Analytics using 3d box plot or timseries plot with mean, 75 and 25 percentile as area.
 
+
+## First analysis
+
+![First analysis](plot.png?raw=true "Waiting time BA subway by line")
+
  
