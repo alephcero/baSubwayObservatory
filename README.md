@@ -14,7 +14,7 @@ The terminals labeled as 1 are the ones in the periphery of the city, while the 
 * Analytics using 3d box plot or timseries plot with mean, 75 and 25 percentile as area.
 
 
-## First analysis
+## Analysis
 
 ### Waiting time BA subway by line
 ![Waiting time BA subway by line](plot.png?raw=true "Waiting time BA subway by line")
