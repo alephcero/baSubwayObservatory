@@ -16,6 +16,14 @@ The terminals labeled as 1 are the ones in the periphery of the city, while the 
 
 ## First analysis
 
-![First analysis](plot.png?raw=true "Waiting time BA subway by line")
+### Waiting time BA subway by line
+![Waiting time BA subway by line](plot.png?raw=true "Waiting time BA subway by line")
 
+### Rush Hour for all lines
+![Rush Hour for all lines](rushHourAllLines.png?raw=true "Rush Hour for all lines")
+
+### Rush Hour by line
+![Rush Hour by line](rushHourPerLine.png?raw=true "Rush Hour by line")
  
+### Rush Hour by station
+![Rush Hour by station](rushHourByStation.png?raw=true "Rush Hour by station")
