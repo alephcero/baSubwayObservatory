@@ -1,0 +1,79 @@
+div{
+  font-family: sans-serif;
+}
+.header{
+   color: dimgray;
+   text-align: center;
+   display: inline-block;
+}
+
+.header h1{
+  margin: 0  0 10px 0;  
+  display: inline-block;
+  vertical-align: middle;
+  padding-bottom:10px;
+}
+
+.header img{
+  width:150px;
+  display: inline-block;
+  border-radius: 90px;
+}
+
+.buttons{
+  margin-bottom: 20px;
+}
+.lineA{
+  background: dodgerblue;
+  color:white;
+  font-weight: bold;
+}
+
+.lineB{
+  background: firebrick;
+  color:white;
+  font-weight: bold;
+}
+
+.lineC{
+  background: mediumblue;
+  color:white;
+  font-weight: bold;
+}
+
+.lineD{
+  background: forestgreen;
+  color:white;
+  font-weight: bold;
+}
+
+.lineE{
+  background: purple;
+  color:white;
+  font-weight: bold;
+}
+
+.lineH{
+  background: gold;
+  color:white;
+  font-weight: bold;
+}
+
+
+.leftColumn{
+  width: 270px; 
+  float:left;
+}
+.righColumn{
+  width: 300px; 
+  float:left;
+}
+
+.lastStation{
+  padding-top:5px;
+}
+
+.trip{
+  padding-top:5px;
+}
+
