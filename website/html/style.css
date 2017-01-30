@@ -1,32 +1,49 @@
 div{
   font-family: sans-serif;
 }
-.header{
-   color: dimgray;
-   text-align: center;
-   display: inline-block;
-}
 
-.header h1{
-  margin: 0  0 10px 0;  
-  display: inline-block;
-  vertical-align: middle;
-  padding-bottom:10px;
+.header{
+    position: relative;
+    margin:0 auto;
+    width: 500px;
+    height: 75px;
+    border: 3px solid #73AD21;
+
 }
 
 .header img{
-  width:150px;
-  display: inline-block;
+  width: 150px;
   border-radius: 90px;
+}
+.imagen{
+    position: absolute;
+    top: 0;
+    right: 65%;
+    width: 100px;
+    height: 100px;
+    //border: 3px solid red;  
+}
+
+.title{
+    position: absolute;
+    top: -25px;
+    right: 120px;
+    width: 150px;
+    height: 100px;
+    color: dimgray;
+    //border: 3px solid blue;  
 }
 
 .buttons{
-  margin-bottom: 20px;
+   margin: auto;
+   width: 35%;
+   border: 3px solid red;
 }
 .lineA{
   background: dodgerblue;
   color:white;
   font-weight: bold;
+  float: middle;
 }
 
 .lineB{
