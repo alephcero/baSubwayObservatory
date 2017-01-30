@@ -7,7 +7,7 @@ div{
     margin:0 auto;
     width: 500px;
     height: 75px;
-    border: 3px solid #73AD21;
+    //border: 3px solid #73AD21;
 
 }
 
@@ -37,7 +37,7 @@ div{
 .buttons{
    margin: auto;
    width: 35%;
-   border: 3px solid red;
+   //border: 3px solid red;
 }
 .lineA{
   background: dodgerblue;
@@ -76,6 +76,12 @@ div{
   font-weight: bold;
 }
 
+.caja{
+      //border: 3px solid black;
+      margin: 0 auto;
+      width: 45%;
+
+}
 
 .leftColumn{
   width: 270px; 
@@ -83,7 +89,7 @@ div{
 }
 .righColumn{
   width: 300px; 
-  float:left;
+  float:right;
 }
 
 .lastStation{
