@@ -3,7 +3,7 @@ This is a project for monitoring subway activity based on Buenos Aires City [ope
 
 ## Terminals
 
-The terminals labeled as 1 are the ones in the periphery of the city, while the ones labeled as 2 are located in the city center. The exceptions are lines **C** and **H**, which have a transversal layout[1](http://data.buenosaires.gob.ar/dataset/subte-cronograma-de-servicio/resource/69c895c4-31de-4613-9b10-ec4e47d6b1c0). **P** line doesn't have a terminal 2. 
+The terminals labeled as 1 are the ones in the periphery of the city, while the ones labeled as 2 are located in the city center. The exceptions are lines **C** and **H**, which have a transversal layout [1](http://data.buenosaires.gob.ar/dataset/subte-cronograma-de-servicio/resource/69c895c4-31de-4613-9b10-ec4e47d6b1c0). **P** line doesn't have a terminal 2. 
 
 
 ## Pending tasks
@@ -27,4 +27,4 @@ The terminals labeled as 1 are the ones in the periphery of the city, while the 
 ![Rush Hour by line](img/rushHourPerLine.png?raw=true "Rush Hour by line")
  
 ### Rush Hour by station
-![Rush Hour by station](img/rushHourByStation.png?raw=true "Rush Hour by station")
+![Rush Hour by station](img/rushHourByStation.png?raw=true "Rush Hour by station")	
