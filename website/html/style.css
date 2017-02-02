@@ -35,8 +35,9 @@ div{
 }
 
 .buttons{
-   margin: auto;
-   width: 35%;
+   position: relative;
+   margin:0 auto 10px auto;
+   width: 358px;
    //border: 3px solid red;
 }
 .lineA{
@@ -76,10 +77,13 @@ div{
   font-weight: bold;
 }
 
-.caja{
+.dataBox{
       //border: 3px solid black;
-      margin: 0 auto;
-      width: 45%;
+    position: relative;
+    margin:0 auto;
+    width: 500px;
+    height: 75px;
+    //border: 3px solid black;
 
 }
 
@@ -99,4 +103,3 @@ div{
 .trip{
   padding-top:5px;
 }
-
