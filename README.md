@@ -1,8 +1,12 @@
 # baSubwayObservatory
-This is a project for monitoring subway activity based on Buenos Aires City [open data portal](http://data.buenosaires.gob.ar). The overall objective is to provide information about train frequency, train usage and problems in stations with train dispatch. You can see base analytics in the [wiki](https://github.com/alephcero/baSubwayObservatory/wiki). 
+This is a project for monitoring subway activity based on Buenos Aires City [open data portal](http://data.buenosaires.gob.ar). The overall objective is to provide information about train frequency, train usage and problems in stations with train dispatch. 
 
-https://github.com/alephcero/baSubwayObservatory/blob/master/
+* Analysis [notebook](https://github.com/alephcero/baSubwayObservatory/blob/master/src/dataAnalysis.ipynb)
+* Main analytics in the [wiki](https://github.com/alephcero/baSubwayObservatory/wiki) 
+
 ![BA Subway](img/baSubwayMap.png?raw=true "BA Subway")
+
+
 
 ## Terminals
 
