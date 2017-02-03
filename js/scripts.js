@@ -1,57 +1,61 @@
-function line(first,last,waiting,trip) {
-  $('.firstStation').text(first);
-  $('.lastStation').text(last);
-  $('.meanWait').text(waiting);
-  $('.trip').text(trip);
+
+//subway data object
+var subteInfoObj = {
+  A:{
+    firstStation: 'San Pedrito',
+    lastStation: 'Plaza de Mayo',
+    meanWait: '3:21',
+    trip: '26'  
+  },
+  B:{
+    firstStation: 'Juan Manuel de Rosas',
+    lastStation: 'Leandro N. Alem',
+    meanWait:'2:56',
+    trip:'27'  
+  },
+  C:{
+    firstStation: 'Constitución',
+    lastStation: 'Retiro',
+    meanWait:'3:08',
+    trip:'13'  
+  },
+  D:{
+    firstStation: 'Congreso de Tucumán',
+    lastStation: 'Catedral',
+    meanWait:'3:04',
+    trip:'26'  
+  },
+  E:{
+    firstStation: 'Plaza de los Virreyes',
+    lastStation: 'Bolivar',
+    meanWait:'6:01',
+    trip:'24'  
+  },
+  H:{
+    firstStation: 'Hospitales',
+    lastStation: 'Las Heras',
+    meanWait:'6:31',
+    trip:'24'  
+  }  
+}
+
+//Function to load data
+function lineInfo(line) {
+  //return subteInfoObj.call(line)
+  
+  $('.firstStation').text('First station FLAG: ' + subteInfoObj[line].firstStation);
+  $('.lastStation').text('Last station FLAG: ' + subteInfoObj[line].lastStation);
+  $('.meanWait').text('Mean waiting time: ' + subteInfoObj[line].meanWait +' minutes');
+  $('.trip').text('Full trip duration: ' + subteInfoObj[line].trip + ' minutes');
+  $("#delayPlotId").attr("src",'https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLine'+line+'.png'); 
 }
 
 
-$('.lineA').click(function() {
-  $('.firstStation').text('First station: San Pedrito');
-  $('.lastStation').text('Last station: Plaza de Mayo');
-  $('.meanWait').text('Mean waiting time: 3:21 minutes');
-  $('.trip').text('Full trip duration: 26 minutes'); 
-  $("#delayPlotId").attr("src","https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineA.png");
-});
+// Button funcionality
+$('.lineA').on('click',lineInfo('A'));
+$('.lineB').on('click',lineInfo('B'));
+$('.lineC').on('click',lineInfo('C'));
+$('.lineD').on('click',lineInfo('D'));
+$('.lineE').on('click',lineInfo('E'));
+$('.lineH').on('click',lineInfo('H'));
 
-$('.lineB').click(function() {
-  $('.firstStation').text('First station: Juan Manuel de Rosas');
-  $('.lastStation').text('Last station: Leandro N. Alem');
-  $('.meanWait').text('Mean waiting time: 2:56 minutes');
-  $('.trip').text('Full trip duration: 27 minutes');
-  $("#delayPlotId").attr("src","https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineB.png");
-});
-
-$('.lineC').click(function(){
-  $('.firstStation').text('First station: Constitución');
-  $('.lastStation').text('Last station: Retiro');
-  $('.meanWait').text('Mean waiting time: 3:08 minutes');
-  $('.trip').text('Full trip duration: 13 minutes');
-  $("#delayPlotId").attr("src","https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineC.png");
- });
-
-$('.lineD').click(function(){
-  $('.firstStation').text('First station: Congreso de Tucumán');
-  $('.lastStation').text('Last station: Catedral');
-  $('.meanWait').text('Mean waiting time: 3:04 minutes');
-  $('.trip').text('Full trip duration: 26 minutes');
-  $("#delayPlotId").attr("src","https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineD.png");
- });
- 
- $('.lineE').click(function(){
-  $('.firstStation').text('First station: Plaza de los Virreyes');
-  $('.lastStation').text('Last station: Bolivar');
-  $('.meanWait').text('Mean waiting time: 6:01 minutes');
-  $('.trip').text('Full trip duration: 24 minutes');
-  $("#delayPlotId").attr("src","https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineE.png");
- });
- 
-  $('.lineH').click(function(){
-  $('.firstStation').text('First station: Hospitales');
-  $('.lastStation').text('Last station: Las Heras');
-  $('.meanWait').text('Mean waiting time: 6:31 minutes');
-  $('.trip').text('Full trip duration: 24 minutes');
-  $("#delayPlotId").attr("src","https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineH.png");
- });
- 
-//$('.lineC').on('click', line('Constitucion','Retiro','4 min','22 min'))
