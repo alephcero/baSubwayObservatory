@@ -40,7 +40,7 @@ var subteInfoObj = {
 }
 
 //Function to load data
-
+//http://stackoverflow.com/a/16708040/2436922
 function lineInfo(e) {
 
   var line = e.data.line;
