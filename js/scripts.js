@@ -40,22 +40,24 @@ var subteInfoObj = {
 }
 
 //Function to load data
-function lineInfo(line) {
-  //return subteInfoObj.call(line)
-  
-  $('.firstStation').text('First station FLAG: ' + subteInfoObj[line].firstStation);
-  $('.lastStation').text('Last station FLAG: ' + subteInfoObj[line].lastStation);
+
+function lineInfo(e) {
+
+  var line = e.data.line;
+
+  $('.firstStation').text('First station : ' + subteInfoObj[line].firstStation);
+  $('.lastStation').text('Last station : ' + subteInfoObj[line].lastStation);
   $('.meanWait').text('Mean waiting time: ' + subteInfoObj[line].meanWait +' minutes');
   $('.trip').text('Full trip duration: ' + subteInfoObj[line].trip + ' minutes');
   $("#delayPlotId").attr("src",'https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLine'+line+'.png'); 
+
 }
 
 
 // Button funcionality
-$('.lineA').on('click',lineInfo('A'));
-$('.lineB').on('click',lineInfo('B'));
-$('.lineC').on('click',lineInfo('C'));
-$('.lineD').on('click',lineInfo('D'));
-$('.lineE').on('click',lineInfo('E'));
-$('.lineH').on('click',lineInfo('H'));
-
+$('.lineA').on('click', {line:'A'}, lineInfo);
+$('.lineB').on('click', {line:'B'}, lineInfo);
+$('.lineC').on('click', {line:'C'}, lineInfo);
+$('.lineD').on('click', {line:'D'}, lineInfo);
+$('.lineE').on('click', {line:'E'}, lineInfo);
+$('.lineH').on('click', {line:'H'}, lineInfo);
