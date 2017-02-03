@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Subway Observatory</title>
+  <meta name="description" content="Subway Observatory">
+  <meta name="author" content="SitePoint">
+
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+		
+<div class='header'>
+  <div class='imagen'>
+    <img src='http://www.alstom.com/Global/OneAlstomPlus/Railsystems/Pressreleases/March%202016/20160503--metropolis%20sbase---800x360.jpg'/>
+  </div>
+  <div class='title'>
+    <h1>
+      Subway Observatory
+    </h1>
+  </div>
+</div>
+
+  <div class='buttons'>
+    <button class="lineA">
+      <p>
+        A Line
+      </p>
+    </button>
+
+    <button class="lineB">
+      <p>
+        B Line
+      </p>
+    </button>
+
+    <button class="lineC">
+      <p>
+        C Line
+      </p>
+    </button>
+
+    <button class="lineD">
+      <p>
+       D Line
+      </p>
+    </button>
+
+    <button class="lineE">
+      <p>
+       E Line
+      </p>
+    </button>
+
+    <button class="lineH">
+      <p>
+        H Line
+      </p>
+    </button>
+  </div>
+<div class='dataBox' >
+  <div class='leftColumn'>
+    <div class='firstStation'>
+      First station: San Pedrito
+    </div>
+    <div class='lastStation'>
+      Last station: Plaza de Mayo
+    </div>    
+  </div>
+
+  <div class='rightColumn'>
+    <div class='meanWait'>
+      Mean waiting time: 3:21 minutes
+    </div>
+    <div class='trip'>
+      Full trip: 26 minutes
+    </div>    
+  </div>
+</div> 
+<div class = 'delayPlot'>
+ <img id="delayPlotId" src='https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineA.png'/>
+</div>
+
+  <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>

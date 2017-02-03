@@ -1,0 +1,132 @@
+div{
+  font-family: sans-serif;
+  background:white;
+}
+body{
+  background:white;
+  }
+
+.header{
+    position: relative;
+    margin:0 auto;
+    width: 500px;
+    height: 75px;
+    //border: 3px solid #73AD21;
+
+}
+
+.header img{
+  width: 150px;
+  border-radius: 90px;
+}
+.imagen{
+    position: absolute;
+    top: 0;
+    right: 65%;
+    width: 100px;
+    height: 100px;
+    //border: 3px solid red;  
+}
+
+.title{
+    position: absolute;
+    top: -25px;
+    right: 120px;
+    width: 150px;
+    height: 100px;
+    color: dimgray;
+    //border: 3px solid blue;  
+}
+
+.buttons{
+   position: relative;
+   margin:0 auto 10px auto;
+   width: 400px;
+   background:white;
+   //border: 3px solid red;
+}
+.lineA{
+  background: dodgerblue;
+  color:white;
+  font-weight: bold;
+  //float: middle;
+  border-radius: 30px;
+  border:0;
+}
+
+.lineB{
+  background: firebrick;
+  color:white;
+  font-weight: bold;
+  border-radius: 30px;
+  border:0;
+}
+
+.lineC{
+  background: mediumblue;
+  color:white;
+  font-weight: bold;
+  border-radius: 30px;
+  border:0;
+}
+
+.lineD{
+  background: forestgreen;
+  color:white;
+  font-weight: bold;
+  border-radius: 30px;
+  border:0;
+}
+
+.lineE{
+  background: purple;
+  color:white;
+  font-weight: bold;
+  border-radius: 30px;
+  border:0;
+}
+
+.lineH{
+  background: gold;
+  color:white;
+  font-weight: bold;
+  border-radius: 30px;
+  border:0;
+}
+
+.dataBox{
+      //border: 3px solid black;
+    position: relative;
+    margin:0 auto;
+    width: 500px;
+    height: 75px;
+    //border: 3px solid black;
+
+}
+
+.leftColumn{
+  width: 270px; 
+  float:left;
+}
+.righColumn{
+  width: 300px; 
+  float:right;
+}
+
+.lastStation{
+  padding-top:5px;
+}
+
+.trip{
+  padding-top:5px;
+}
+
+.delayPlot {
+    width: 900px;
+    position: relative;
+    margin:0 auto;
+}
+.delayPlot img{
+  width: 900px;
+  margin: 0 auto;
+}
