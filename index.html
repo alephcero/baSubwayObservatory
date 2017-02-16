@@ -89,7 +89,7 @@
 
 <div id = 'mapContainer'>
   <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
-  <script src="data/data.js"></script>
+  <script src="GeoJSONdata/data.js"></script>
 
   <script>
     //instanciate leaflet map
@@ -111,7 +111,6 @@ var myStyle = {
 L.geoJSON(subwayLines, {
     style: myStyle
 }).addTo(map);
-
 
 
   </script>
