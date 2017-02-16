@@ -101,17 +101,29 @@
       }).addTo(map);
 
 
+    var myStyle = {
+        "color": "#ff7800",
+        "weight": 5,
+        "opacity": 1
+    };
 
-var myStyle = {
-    "color": "#ff7800",
-    "weight": 5,
-    "opacity": 1
-};
+    L.geoJSON(subwayLines, {
+        style: myStyle
+    }).addTo(map);
 
-L.geoJSON(subwayLines, {
-    style: myStyle
-}).addTo(map);
 
+// try to implement
+//    L.geoJSON(subwayLines, {
+//        style:  function(feature) {
+//            switch (feature.features.properties.LINEASUB) {
+//                case "LINEA A": return {color: dodgerblue};
+//                case "LINEA B":   return {color: firebrick};
+//                case "LINEA C": return {color: mediumblue};
+//                case "LINEA D":   return {color: forestgreen};
+//                case "LINEA E": return {color: purple};
+//                case "LINEA H":   return {color: gold};
+//            }
+//    }}).addTo(map);
 
   </script>
 
