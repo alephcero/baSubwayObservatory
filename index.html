@@ -7,7 +7,7 @@
   <title>Subway Observatory</title>
   <meta name="description" content="Subway Observatory">
   <meta name="author" content="SitePoint">
-
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
   <link rel="stylesheet" href="css/styles.css?v=1.0">
 
   <!--[if lt IE 9]>
@@ -27,7 +27,6 @@
     </h1>
   </div>
 </div>
-
   <div class='buttons'>
     <button class="lineA">
       <p>
@@ -86,6 +85,22 @@
 </div> 
 <div class = 'delayPlot'>
  <img id="delayPlotId" src='https://raw.githubusercontent.com/alephcero/baSubwayObservatory/master/img/plotLineA.png'/>
+</div>
+
+<div id = 'mapContainer'>
+  <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+
+  <script>
+    //instanciate leaflet map
+
+    var map = L.map('mapContainer').setView([-34.612889, -58.442420], 12);
+
+    var layer =  L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
+        //maxZoom: 18,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy;<a href="https://carto.com/attribution">CARTO</a>'
+      }).addTo(map);  
+  </script>
+
 </div>
 
   <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>

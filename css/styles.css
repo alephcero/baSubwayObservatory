@@ -130,3 +130,11 @@ body{
   width: 900px;
   margin: 0 auto;
 }
+
+#mapContainer {
+  position:absolute;
+  top: 600px;
+  bottom: 10px;
+  right: 300px;
+  left: 300px;
+ }
