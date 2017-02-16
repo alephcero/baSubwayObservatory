@@ -100,30 +100,22 @@
         attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy;<a href="https://carto.com/attribution">CARTO</a>'
       }).addTo(map);
 
-
-    var myStyle = {
-        "color": "#ff7800",
-        "weight": 5,
-        "opacity": 1
-    };
-
     L.geoJSON(subwayLines, {
-        style: myStyle
-    }).addTo(map);
-
-
-// try to implement
-//    L.geoJSON(subwayLines, {
-//        style:  function(feature) {
-//            switch (feature.features.properties.LINEASUB) {
-//                case "LINEA A": return {color: dodgerblue};
-//                case "LINEA B":   return {color: firebrick};
-//                case "LINEA C": return {color: mediumblue};
-//                case "LINEA D":   return {color: forestgreen};
-//                case "LINEA E": return {color: purple};
-//                case "LINEA H":   return {color: gold};
-//            }
-//    }}).addTo(map);
+        style:  function(feature) {
+            switch (feature.properties.LINEASUB) {
+                case "LINEA A": return {color: "#1e90ff","weight": 5,"opacity": 0.65}; 
+                case "LINEA B": return {color: "#b22222","weight": 5,"opacity": 0.65};
+                case "LINEA C": return {color: "#0000cd","weight": 5,"opacity": 0.65};
+                case "LINEA D": return {color: "#266a2e","weight": 5,"opacity": 0.65};
+                case "LINEA E": return {color: "#800080","weight": 5,"opacity": 0.65};
+                case "LINEA H": return {color: "#ffd700","weight": 5,"opacity": 0.65};
+            }
+          },
+        filter: function(feature, layer) {
+        return feature.properties.show_on_map;
+      }
+    }
+    ).addTo(map);
 
   </script>
 
