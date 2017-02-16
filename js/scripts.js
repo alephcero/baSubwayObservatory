@@ -61,3 +61,4 @@ $('.lineC').on('click', {line:'C'}, lineInfo);
 $('.lineD').on('click', {line:'D'}, lineInfo);
 $('.lineE').on('click', {line:'E'}, lineInfo);
 $('.lineH').on('click', {line:'H'}, lineInfo);
+
